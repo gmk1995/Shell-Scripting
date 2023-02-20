@@ -1,0 +1,30 @@
+"-eq" --> == { equals}
+"-le" --> <= { less or equals}
+"-lt" --> <  { less than }
+"-ge" --> >= { greaterthan or equals}
+"-gt" --> >  { greaterthan }
+"-ne" --> != { not equals}
+
+====================================================================================================================================
+
+$0 --> Print the Script File Name
+$# --> Print Number of Arguments Passed On Command Line
+$$ --> Print the Process ID of the Current Script File
+$? --> Print the "0" if previous Command is successfully Executed, if not it will print the "127" error message command not found
+${10} --> To Pass more than two digit Arguments. Example used 10 here, we can keep any number in place of 10.
+$@ --> Prints the Arguments as a string in a single Line
+$* --> Prints each Arguments as a string in a separate line. 
+====================================================================================================================================
+-f --> used in the if condition to check the file existed in the current directory or not
+===========================================================================================================
+The regular expression =~ ^-?[0-9]+([0-9]+)?$ is used to test if a string is an integer. Here's an explanation of each symbol in the regular expression:
+
+^: Matches the start of the string.
+
+-?: Matches an optional minus sign, allowing for negative integers.
+
+[0-9]+: Matches one or more occurrences of a digit (0 to 9).
+
+([0-9]+)?: Matches an optional group of one or more occurrences of a digit (0 to 9). The ? symbol means "zero or one" occurrences of the preceding group.
+
+$: Matches the end of the string.
